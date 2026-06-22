@@ -8,8 +8,8 @@ Production website for **Furnitects** — custom wardrobe catalog, instant quote
 
 | | URL |
 |---|---|
-| **Live site** | [frontend-ruddy-two-56.vercel.app](https://frontend-ruddy-two-56.vercel.app) |
 | **GitHub** | [github.com/ishubhamjamdar/furnitects](https://github.com/ishubhamjamdar/furnitects) |
+| **Local dev** | `npm run dev` → http://localhost:3000 |
 
 [![View on GitHub](https://img.shields.io/badge/View%20on%20GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ishubhamjamdar/furnitects)
 
@@ -106,11 +106,9 @@ npm run build
 npm run start
 ```
 
-Deploy frontend to Vercel and backend to Railway/Render/Fly.io. Set `NEXT_PUBLIC_API_URL` to your API origin and `CORS_ORIGIN` to your frontend URL.
+Deploy the `frontend/` folder (includes built-in `/api/quotes` routes) to any Node.js host — Railway, Render, Fly.io, or your own VPS. The separate Express backend in `backend/` is optional for local dev or if you prefer a split architecture.
 
-### One-click deploy (recommended)
-
-The Next.js app includes built-in API routes (`/api/quotes`), so you can deploy **only the `frontend/` folder** to [Vercel](https://vercel.com/new/clone?repository-url=https://github.com/ishubhamjamdar/furnitects&project-name=furnitects&root-directory=frontend) — no separate backend needed for the live demo.
+Set `NEXT_PUBLIC_API_URL` only if the API runs on a different origin than the frontend.
 
 ## Contact
 
