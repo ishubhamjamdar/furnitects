@@ -21,6 +21,13 @@ export interface Customization {
   description?: string;
 }
 
+export interface PriceBreakdown {
+  basePrice: number;
+  dimensionAdjustment: number;
+  customizationCharge: number;
+  totalPrice: number;
+}
+
 export interface CatalogItem {
   id: DesignType;
   name: string;

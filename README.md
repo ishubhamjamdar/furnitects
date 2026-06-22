@@ -4,6 +4,15 @@ Production website for **Furnitects** — custom wardrobe catalog, instant quote
 
 **Tagline:** *Dream it, we'll design it.*
 
+## Links
+
+| | URL |
+|---|---|
+| **GitHub** | [github.com/ishubhamjamdar/furnitects](https://github.com/ishubhamjamdar/furnitects) |
+| **Live demo** | Deploy via Vercel (see below) or run locally |
+
+[![View on GitHub](https://img.shields.io/badge/View%20on%20GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ishubhamjamdar/furnitects)
+
 ## Stack
 
 | Layer    | Technology                          |
@@ -98,6 +107,10 @@ npm run start
 ```
 
 Deploy frontend to Vercel and backend to Railway/Render/Fly.io. Set `NEXT_PUBLIC_API_URL` to your API origin and `CORS_ORIGIN` to your frontend URL.
+
+### One-click deploy (recommended)
+
+The Next.js app includes built-in API routes (`/api/quotes`), so you can deploy **only the `frontend/` folder** to [Vercel](https://vercel.com/new/clone?repository-url=https://github.com/ishubhamjamdar/furnitects&project-name=furnitects&root-directory=frontend) — no separate backend needed for the live demo.
 
 ## Contact
 

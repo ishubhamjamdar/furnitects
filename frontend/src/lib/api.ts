@@ -1,9 +1,12 @@
 import type { CatalogResponse, Quote, QuoteRequest } from './types';
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000';
+function getApiBase(): string {
+  if (typeof window !== 'undefined') return '';
+  return process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
+}
 
 async function fetchApi<T>(path: string, options?: RequestInit): Promise<T> {
-  const res = await fetch(`${API_BASE}${path}`, {
+  const res = await fetch(`${getApiBase()}${path}`, {
     ...options,
     headers: {
       'Content-Type': 'application/json',
