@@ -8,8 +8,8 @@ Production website for **Furnitects** — custom wardrobe catalog, instant quote
 
 | | URL |
 |---|---|
+| **Live site** | [frontend-ruddy-two-56.vercel.app](https://frontend-ruddy-two-56.vercel.app) |
 | **GitHub** | [github.com/ishubhamjamdar/furnitects](https://github.com/ishubhamjamdar/furnitects) |
-| **Live demo** | Deploy via Vercel (see below) or run locally |
 
 [![View on GitHub](https://img.shields.io/badge/View%20on%20GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ishubhamjamdar/furnitects)
 
